@@ -59,20 +59,6 @@ extension Pack: Identifiable {
     }
 }
 
-class ContentViewModel: ObservableObject {
-    
-    var cancellables = Set<AnyCancellable>()
-    
-    let client = PacksClient()
-    
-    @Published var packSizes = [250, 500, 1000, 2000, 5000]
-    
-    @Published var count = 1
-    
-
-    
-}
-
 extension Int: Identifiable {
     public var id: Int {
         self
