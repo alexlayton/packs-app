@@ -47,7 +47,7 @@ struct ContentView: View {
     
     var packsView: some View {
         ForEach(appState.calculatedPacks) { pack in
-            Text("\(pack.size) x \(pack.size)")
+            Text("\(pack.size) x \(pack.count)")
         }
     }
 
